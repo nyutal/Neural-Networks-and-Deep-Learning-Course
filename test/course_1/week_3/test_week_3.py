@@ -1,7 +1,7 @@
 # Created by @nyutal on 06/05/2020
 import numpy as np
 import pytest
-from week_3.nn_model import NNModel
+from course_1.week_3.nn_model import NNModel
 
 
 @pytest.fixture()
@@ -17,7 +17,7 @@ def dummy_data():
     return x, y
 
 
-class TestModel:
+class TestWeek3:
     def test_init_params(self, model: NNModel, dummy_data):
         expected_w_1 = np.array(
             [[-0.00416758, -0.00056267], [-0.02136196, 0.01640271], [-0.01793436, -0.00841747],
